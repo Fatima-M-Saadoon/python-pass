@@ -12,3 +12,15 @@ Instructions:
 class StringOperations:
     def reverse(self, *, to_be_reversed: str = None):
         raise NotImplemented('This method need to be implemented')
+       
+    class ReversedString(StringOperations)
+       def reverse(string):
+        string = "".join(reversed(string))
+    return string
+s = "butterfly"
+  
+print ("The original string  is : ",end="")
+print (s)
+  
+print ("The reversed string is : ",end="")
+print (reverse(s))
